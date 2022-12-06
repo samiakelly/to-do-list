@@ -1,0 +1,22 @@
+.header {
+  background-color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+  height: 12.5rem;
+  padding: 5rem 0;
+
+
+}
+
+.header img {
+  height: 2.25rem;
+}
+
+.header strong {
+  font-size: 2.5rem;
+  background-image: linear-gradient(to right, var(--blue), var(--purple-dark)72%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
