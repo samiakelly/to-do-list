@@ -91,18 +91,23 @@ export function Container() {
         </div>
       </div>
       <div className={styles.listaDeTarefas}>
+        {tarefas.length ? (
+         <div>
+           {tarefas.map(tarefa =>
+            { 
+            return (
+              <Tarefa
+                key={tarefa}
+                content={tarefa} 
+                deleteTarefa={deleteTarefa}
+              />
+              )
+            })} 
+         </div>
 
-        {tarefas.map(tarefa =>
-          { 
-          return (
-            <Tarefa
-              key={tarefa}
-              content={tarefa} 
-              deleteTarefa={deleteTarefa}
-            />
-            )
-          })}   
-
+        ): <SemTarefa />}
+    
+       
       </div>
     
     </div>
