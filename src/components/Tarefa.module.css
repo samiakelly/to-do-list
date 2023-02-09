@@ -19,7 +19,8 @@
 
 }
 
-.buttonMarcar {
+.buttonMarcar,
+.buttonMarcarConcluido {
   width: 1.50rem;
   height: 1.50rem;
   border-radius: 16px;
@@ -38,7 +39,18 @@
   border: none;
 }
 
+.buttonMarcarConcluido {
+  background: var(--purple-dark);
+  border: none;
+}
+
 .buttonMarcar:hover span::before {
+  content: "\2713";
+  padding: 0 0.25rem;
+  font-weight: bold;
+}
+
+.buttonMarcarConcluido span::before {
   content: "\2713";
   padding: 0 0.25rem;
   font-weight: bold;
